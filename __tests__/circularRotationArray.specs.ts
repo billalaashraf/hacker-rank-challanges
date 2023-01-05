@@ -1,6 +1,6 @@
 import circularArrayRotation from '../src/circularArrayRotation';
 
-describe('test circularArrayRotation of function', () => {
+describe('test circularArrayRotation function', () => {
     it('should return [2,3,1] when [1,2,3] is passed with 2 rotation and quries [0,1,2]',  () => {
         expect(circularArrayRotation([1, 2, 3], 2, [0, 1, 2])).toEqual([2,3,1]);
     })
