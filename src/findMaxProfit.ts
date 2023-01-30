@@ -33,19 +33,7 @@ const profit = (start: number, end: number, diff: number) => {
 }
 
 function findMaximumProfit(input: number[]): Profit[] {
-    let buy = 0;
-    let sell = 1;
-    let next = sell + 1;
-    const n = input.length;
-
-    if (n === 0) return [];
-    if (n === 1) return [profit(input[0], input[0], 0)]
-    if (n === 2) return [profit(input[0], input[1], input[1] - input[0])]
-
-    while (n < next) {
-        
-    }
-    return []
+    
 }
 
 export default findMaximumProfit;

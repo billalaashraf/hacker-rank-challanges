@@ -2,17 +2,16 @@ const input = [3, 1, -7, 11, 9];
 const sum = 12;
 
 function findSum (arr:number[], num:number):number[] {
-    for (let i = 0; i < arr.length; i++) {
-        const first = arr[i];
-        const reminder = num - first;
-        for (let j = i+1; j < arr.length; j++) {
-            if (reminder === arr[j]) {
-                return [first, arr[j]];
-            }
+    let s = new Set()
+    for (let i=0; i < arr.length; i++) {
+        let remainder = num - arr[i];
+        if (s.has(remainder)) {
+            return [i, arr.indexOf(remainder)]
         }
+        s.add(arr[i])
     }
     return [];
 }
 
-console.log(findSum(input, sum));
+export default findSum;
 
