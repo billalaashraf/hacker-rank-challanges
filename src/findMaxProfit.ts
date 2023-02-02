@@ -17,23 +17,21 @@ Approach:
 
  */
 
-export interface Profit {
+interface Profit {
     start: number
     end: number
     profit: number
 }
 
-const profit = (start: number, end: number, diff: number) => {
-   const rt: Profit = {
-        start: start, 
-        end: end, 
-        profit: diff
-   }
-   return rt;
-}
-
 function findMaximumProfit(input: number[]): Profit[] {
-    
+    if (input.length < 2) return [];
+
+    let rt: Profit[] = [];
+    let buy: number = 0;
+    let next: number = 0;
+    let n = input.length - 1
+
+    return rt;
 }
 
 export default findMaximumProfit;
