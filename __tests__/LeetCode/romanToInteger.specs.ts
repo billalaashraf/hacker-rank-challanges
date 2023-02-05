@@ -1,6 +1,6 @@
 import romanToInt from '../../src/LeetCode/romanToInteger'
 
-describe('romanToInt', () => { 
+describe('romanToInteger', () => { 
     it('should return the 2 for "II" roman number', () => {
         expect(romanToInt('II')).toBe(2);
     });
